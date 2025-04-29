@@ -1,0 +1,12 @@
+{
+    "search_url": "https://www.pakwheels.com/used-cars/search/-/",
+    "comparison_url":"https://www.pakwheels.com/new-cars/compare/",
+    "webdriver_wait_timeout": 20,
+    "browser": "Chrome",
+    "headless": false,
+    "uset_agents": [
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3",
+        "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+    ]
+  }

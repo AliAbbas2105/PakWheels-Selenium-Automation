@@ -1,0 +1,246 @@
+2025-04-24 18:55:02 ERROR    FAIL: tests.comparison_test.ComparisonTest.test_compared_data
+Traceback (most recent call last):
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\tests\comparison_test.py", line 171, in test_compared_data
+    self.assertTrue(compare_success,
+AssertionError: False is not true : Failed to select cars for comparison.
+
+2025-04-24 18:56:51 INFO     PASS: tests.comparison_test.ComparisonTest.test_select_three_cars
+2025-04-24 18:57:20 ERROR    FAIL: tests.comparison_test.ComparisonTest.test_select_two_cars
+Traceback (most recent call last):
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\tests\comparison_test.py", line 77, in test_select_two_cars
+    self.assertTrue(success, "Failed to select the first car.")
+AssertionError: False is not true : Failed to select the first car.
+
+2025-04-24 19:46:33 INFO     PASS: tests.filter_test.FilterTests.test_apply_city_filter
+2025-04-24 19:47:09 INFO     PASS: tests.filter_test.FilterTests.test_apply_color_filter
+2025-04-24 19:47:39 INFO     PASS: tests.filter_test.FilterTests.test_apply_make_filter
+2025-04-24 19:48:10 ERROR    FAIL: tests.filter_test.FilterTests.test_search_bar
+Traceback (most recent call last):
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\tests\filter_test.py", line 56, in test_search_bar
+    self.fail(
+AssertionError: Found listings that do not match the applied filters:\nListing 3 (ID: 9664430): City mismatch. Expected 'Lahore', got 'Islamabad'.\nListing 5 (ID: 9955747): City mismatch. Expected 'Lahore', got 'Rawalpindi'.\nListing 13 (ID: 9999356): City mismatch. Expected 'Lahore', got 'Peshawar'.\nListing 14 (ID: 9998902): City mismatch. Expected 'Lahore', got 'Islamabad'.\nListing 15 (ID: 9997247): City mismatch. Expected 'Lahore', got 'Faisalabad'.\nListing 17 (ID: 9995123): City mismatch. Expected 'Lahore', got 'Attock'.\nListing 18 (ID: 9985003): City mismatch. Expected 'Lahore', got 'Dera ismail khan'.\nListing 19 (ID: 9697799): City mismatch. Expected 'Lahore', got 'Burewala'.\nListing 22 (ID: 9988428): City mismatch. Expected 'Lahore', got 'Islamabad'.\nListing 25 (ID: 9984868): City mismatch. Expected 'Lahore', got 'Multan'.
+
+2025-04-24 19:48:52 INFO     PASS: tests.filter_test.FilterTests.test_sorting_by_price
+2025-04-24 19:55:32 ERROR    FAIL: tests.filter_test.FilterTests.test_verify_complex_filters_across_pages
+Traceback (most recent call last):
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\tests\filter_test.py", line 412, in test_verify_complex_filters_across_pages
+    self.assertFalse(mismatches,
+AssertionError: ["Page 1, Listing 1 (ID: 9979062, URL: https://www.pakwheels.com/used-cars/toyota-crown-2022-for-sale-in-lahore-9979062): Registered In mismatch. Expected 'Karachi', got 'Un-Registered'.", "Page 1, Listing 3 (ID: 9928349, URL: https://www.pakwheels.com/used-cars/toyota-prius-2024-for-sale-in-islamabad-9928349): Registered In mismatch. Expected 'Karachi', got 'Un-Registered'.", "Page 1, Listing 4 (ID: 9987636, URL: https://www.pakwheels.com/used-cars/hyundai-elantra-2024-for-sale-in-islamabad-9987636): Registered In mismatch. Expected 'Karachi', got 'Un-Registered'.", "Page 1, Listing 6 (ID: 9949167, URL: https://www.pakwheels.com/used-cars/honda-grace-hybrid-2015-for-sale-in-peshawar-9949167): Registered In mismatch. Expected 'Karachi', got 'Islamabad'.", "Page 1, Listing 7 (ID: 8683318, URL: https://www.pakwheels.com/used-cars/toyota-prius-2020-for-sale-in-islamabad-8683318): Registered In mismatch. Expected 'Karachi', got 'Un-Registered'."] is not false : Found listings that did not match the complex filter set or had errors:\nPage 1, Listing 1 (ID: 9979062, URL: https://www.pakwheels.com/used-cars/toyota-crown-2022-for-sale-in-lahore-9979062): Registered In mismatch. Expected 'Karachi', got 'Un-Registered'.\nPage 1, Listing 3 (ID: 9928349, URL: https://www.pakwheels.com/used-cars/toyota-prius-2024-for-sale-in-islamabad-9928349): Registered In mismatch. Expected 'Karachi', got 'Un-Registered'.\nPage 1, Listing 4 (ID: 9987636, URL: https://www.pakwheels.com/used-cars/hyundai-elantra-2024-for-sale-in-islamabad-9987636): Registered In mismatch. Expected 'Karachi', got 'Un-Registered'.\nPage 1, Listing 6 (ID: 9949167, URL: https://www.pakwheels.com/used-cars/honda-grace-hybrid-2015-for-sale-in-peshawar-9949167): Registered In mismatch. Expected 'Karachi', got 'Islamabad'.\nPage 1, Listing 7 (ID: 8683318, URL: https://www.pakwheels.com/used-cars/toyota-prius-2020-for-sale-in-islamabad-8683318): Registered In mismatch. Expected 'Karachi', got 'Un-Registered'.
+
+2025-04-24 20:11:17 INFO     PASS: tests.filter_test.FilterTests.test_verify_imported_assembly_across_pages
+2025-04-24 20:11:52 ERROR    FAIL: tests.filter_test.FilterTests.test_verify_listings_match_filters
+Traceback (most recent call last):
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\tests\filter_test.py", line 176, in test_verify_listings_match_filters
+    self.fail(
+AssertionError: Found listings that do not match the applied filters:\nListing 1 (ID: 9988357): Price mismatch. Price 1850000 not in range [2500000-10000000].\nListing 2 (ID: 10009169): Price mismatch. Price 1450000 not in range [2500000-10000000].\nListing 3 (ID: 9975669): Price mismatch. Price 28500000 not in range [2500000-10000000].\nListing 5 (ID: 9970407): Price mismatch. Price 1340000 not in range [2500000-10000000].\nListing 6 (ID: 9829674): Price mismatch. Price 24900000 not in range [2500000-10000000].\nListing 7 (ID: 9810923): Price is missing. Cannot verify range.\nListing 12 (ID: 9996948): Price is missing. Cannot verify range.\nListing 15 (ID: 10009121): Price mismatch. Price 2400000 not in range [2500000-10000000].\nListing 16 (ID: 9843959): Price mismatch. Price 1550000 not in range [2500000-10000000].\nListing 17 (ID: 10009040): Price mismatch. Price 1380000 not in range [2500000-10000000].\nListing 20 (ID: 10008745): Price mismatch. Price 2450000 not in range [2500000-10000000].\nListing 27 (ID: 10008396): Price mismatch. Price 1400000 not in range [2500000-10000000].\nListing 28 (ID: 10008290): Price mismatch. Price 1300000 not in range [2500000-10000000].\nListing 29 (ID: 10008277): Price mismatch. Price 1275000 not in range [2500000-10000000].\nListing 30 (ID: 10008273): Price mismatch. Price 2200000 not in range [2500000-10000000].
+
+2025-04-24 20:13:22 ERROR    FAIL: tests.filter_test.FilterTests.test_verify_listings_match_filters_v2
+Traceback (most recent call last):
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\tests\filter_test.py", line 232, in test_verify_listings_match_filters_v2
+    self.assertTrue(
+AssertionError: False is not true : URL did not change after applying Picture Availability filter 'With Pictures'.
+
+2025-04-28 22:27:07 ERROR    FAIL: tests.comparison_test.ComparisonTest.test_compared_data
+Traceback (most recent call last):
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\tests\comparison_test.py", line 169, in test_compared_data
+    compare_success = self.comparison_interactor.do_comparison(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\core\comparison_interactor.py", line 19, in do_comparison
+    if not self.navigator.is_on_comparison_page():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\core\navigator.py", line 409, in is_on_comparison_page
+    current_url = self.driver.current_url
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aa\AppData\Roaming\Python\Python312\site-packages\selenium\webdriver\remote\webdriver.py", line 560, in current_url
+    return self.execute(Command.GET_CURRENT_URL)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aa\AppData\Roaming\Python\Python312\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\aa\AppData\Roaming\Python\Python312\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.115)
+Stacktrace:
+	GetHandleVerifier [0x00007FF69DFEEFA5+77893]
+	GetHandleVerifier [0x00007FF69DFEF000+77984]
+	(No symbol) [0x00007FF69DDB91BA]
+	(No symbol) [0x00007FF69DD91B63]
+	(No symbol) [0x00007FF69DE3E92E]
+	(No symbol) [0x00007FF69DE5E972]
+	(No symbol) [0x00007FF69DE36F03]
+	(No symbol) [0x00007FF69DE00328]
+	(No symbol) [0x00007FF69DE01093]
+	GetHandleVerifier [0x00007FF69E2A7B6D+2931725]
+	GetHandleVerifier [0x00007FF69E2A2132+2908626]
+	GetHandleVerifier [0x00007FF69E2C00F3+3031443]
+	GetHandleVerifier [0x00007FF69E0091EA+184970]
+	GetHandleVerifier [0x00007FF69E01086F+215311]
+	GetHandleVerifier [0x00007FF69DFF6EC4+110436]
+	GetHandleVerifier [0x00007FF69DFF7072+110866]
+	GetHandleVerifier [0x00007FF69DFDD479+5401]
+	BaseThreadInitThunk [0x00007FFFCF297374+20]
+	RtlUserThreadStart [0x00007FFFCF47CC91+33]
+
+
+2025-04-28 22:28:25 ERROR    FAIL: tests.comparison_test.ComparisonTest.test_compared_data
+Traceback (most recent call last):
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\tests\comparison_test.py", line 169, in test_compared_data
+    compare_success = self.comparison_interactor.do_comparison(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\core\comparison_interactor.py", line 19, in do_comparison
+    if not self.navigator.is_on_comparison_page():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\core\navigator.py", line 409, in is_on_comparison_page
+    current_url = self.driver.current_url
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aa\AppData\Roaming\Python\Python312\site-packages\selenium\webdriver\remote\webdriver.py", line 560, in current_url
+    return self.execute(Command.GET_CURRENT_URL)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aa\AppData\Roaming\Python\Python312\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\aa\AppData\Roaming\Python\Python312\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.115)
+Stacktrace:
+	GetHandleVerifier [0x00007FF69DFEEFA5+77893]
+	GetHandleVerifier [0x00007FF69DFEF000+77984]
+	(No symbol) [0x00007FF69DDB91BA]
+	(No symbol) [0x00007FF69DD91B63]
+	(No symbol) [0x00007FF69DE3E92E]
+	(No symbol) [0x00007FF69DE5E972]
+	(No symbol) [0x00007FF69DE36F03]
+	(No symbol) [0x00007FF69DE00328]
+	(No symbol) [0x00007FF69DE01093]
+	GetHandleVerifier [0x00007FF69E2A7B6D+2931725]
+	GetHandleVerifier [0x00007FF69E2A2132+2908626]
+	GetHandleVerifier [0x00007FF69E2C00F3+3031443]
+	GetHandleVerifier [0x00007FF69E0091EA+184970]
+	GetHandleVerifier [0x00007FF69E01086F+215311]
+	GetHandleVerifier [0x00007FF69DFF6EC4+110436]
+	GetHandleVerifier [0x00007FF69DFF7072+110866]
+	GetHandleVerifier [0x00007FF69DFDD479+5401]
+	BaseThreadInitThunk [0x00007FFFCF297374+20]
+	RtlUserThreadStart [0x00007FFFCF47CC91+33]
+
+
+2025-04-28 22:28:27 ERROR    FAIL: tests.comparison_test.ComparisonTest.test_select_three_cars
+Traceback (most recent call last):
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\tests\comparison_test.py", line 93, in test_select_three_cars
+    self.navigator.go_to_comparison_page()
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\core\navigator.py", line 398, in go_to_comparison_page
+    self.driver.get(comparison_url)
+  File "C:\Users\aa\AppData\Roaming\Python\Python312\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\aa\AppData\Roaming\Python\Python312\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\aa\AppData\Roaming\Python\Python312\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.115)
+Stacktrace:
+	GetHandleVerifier [0x00007FF69DFEEFA5+77893]
+	GetHandleVerifier [0x00007FF69DFEF000+77984]
+	(No symbol) [0x00007FF69DDB91BA]
+	(No symbol) [0x00007FF69DD91B63]
+	(No symbol) [0x00007FF69DE3E92E]
+	(No symbol) [0x00007FF69DE5E972]
+	(No symbol) [0x00007FF69DE36F03]
+	(No symbol) [0x00007FF69DE00328]
+	(No symbol) [0x00007FF69DE01093]
+	GetHandleVerifier [0x00007FF69E2A7B6D+2931725]
+	GetHandleVerifier [0x00007FF69E2A2132+2908626]
+	GetHandleVerifier [0x00007FF69E2C00F3+3031443]
+	GetHandleVerifier [0x00007FF69E0091EA+184970]
+	GetHandleVerifier [0x00007FF69E01086F+215311]
+	GetHandleVerifier [0x00007FF69DFF6EC4+110436]
+	GetHandleVerifier [0x00007FF69DFF7072+110866]
+	GetHandleVerifier [0x00007FF69DFDD479+5401]
+	BaseThreadInitThunk [0x00007FFFCF297374+20]
+	RtlUserThreadStart [0x00007FFFCF47CC91+33]
+
+
+2025-04-28 22:29:35 ERROR    FAIL: tests.comparison_test.ComparisonTest.test_compared_data
+Traceback (most recent call last):
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\tests\comparison_test.py", line 169, in test_compared_data
+    compare_success = self.comparison_interactor.do_comparison(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\core\comparison_interactor.py", line 19, in do_comparison
+    if not self.navigator.is_on_comparison_page():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\core\navigator.py", line 409, in is_on_comparison_page
+    current_url = self.driver.current_url
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aa\AppData\Roaming\Python\Python312\site-packages\selenium\webdriver\remote\webdriver.py", line 560, in current_url
+    return self.execute(Command.GET_CURRENT_URL)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aa\AppData\Roaming\Python\Python312\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\aa\AppData\Roaming\Python\Python312\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=135.0.7049.115)
+Stacktrace:
+	GetHandleVerifier [0x00007FF69DFEEFA5+77893]
+	GetHandleVerifier [0x00007FF69DFEF000+77984]
+	(No symbol) [0x00007FF69DDB91BA]
+	(No symbol) [0x00007FF69DDA4F15]
+	(No symbol) [0x00007FF69DDC9F04]
+	(No symbol) [0x00007FF69DE3EACF]
+	(No symbol) [0x00007FF69DE5E972]
+	(No symbol) [0x00007FF69DE36F03]
+	(No symbol) [0x00007FF69DE00328]
+	(No symbol) [0x00007FF69DE01093]
+	GetHandleVerifier [0x00007FF69E2A7B6D+2931725]
+	GetHandleVerifier [0x00007FF69E2A2132+2908626]
+	GetHandleVerifier [0x00007FF69E2C00F3+3031443]
+	GetHandleVerifier [0x00007FF69E0091EA+184970]
+	GetHandleVerifier [0x00007FF69E01086F+215311]
+	GetHandleVerifier [0x00007FF69DFF6EC4+110436]
+	GetHandleVerifier [0x00007FF69DFF7072+110866]
+	GetHandleVerifier [0x00007FF69DFDD479+5401]
+	BaseThreadInitThunk [0x00007FFFCF297374+20]
+	RtlUserThreadStart [0x00007FFFCF47CC91+33]
+
+
+2025-04-28 22:33:29 INFO     PASS: tests.comparison_test.ComparisonTest.test_compared_data
+2025-04-28 22:35:26 ERROR    FAIL: tests.comparison_test.ComparisonTest.test_select_three_cars
+Traceback (most recent call last):
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\tests\comparison_test.py", line 129, in test_select_three_cars
+    self.assertTrue(success, "Failed to select the first car.")
+AssertionError: False is not true : Failed to select the first car.
+
+2025-04-28 22:36:56 INFO     PASS: tests.comparison_test.ComparisonTest.test_select_two_cars
+2025-04-28 23:43:01 INFO     PASS: tests.filter_test.FilterTests.test_apply_city_filter
+2025-04-28 23:43:20 INFO     PASS: tests.filter_test.FilterTests.test_apply_color_filter
+2025-04-28 23:43:42 INFO     PASS: tests.filter_test.FilterTests.test_apply_make_filter
+2025-04-28 23:44:27 ERROR    FAIL: tests.filter_test.FilterTests.test_search_bar
+Traceback (most recent call last):
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\tests\filter_test.py", line 55, in test_search_bar
+    self.fail(
+AssertionError: Found listings that do not match the applied filters:\nListing 4 (ID: 9664430): City mismatch. Expected 'Lahore', got 'Islamabad'.\nListing 6 (ID: 10025155): City mismatch. Expected 'Lahore', got 'Islamabad'.\nListing 9 (ID: 10022404): City mismatch. Expected 'Lahore', got 'Islamabad'.\nListing 13 (ID: 10015242): City mismatch. Expected 'Lahore', got 'Faisalabad'.\nListing 15 (ID: 9869967): City mismatch. Expected 'Lahore', got 'Mansehra'.\nListing 16 (ID: 10010631): City mismatch. Expected 'Lahore', got 'Islamabad'.\nListing 17 (ID: 10010588): City mismatch. Expected 'Lahore', got 'Peshawar'.\nListing 23 (ID: 9999356): City mismatch. Expected 'Lahore', got 'Peshawar'.\nListing 24 (ID: 9998902): City mismatch. Expected 'Lahore', got 'Islamabad'.\nListing 25 (ID: 9997247): City mismatch. Expected 'Lahore', got 'Faisalabad'.
+
+2025-04-28 23:45:09 ERROR    FAIL: tests.filter_test.FilterTests.test_sorting_by_price
+Traceback (most recent call last):
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\tests\filter_test.py", line 474, in test_sorting_by_price
+    self.fail("Sorting mismatches:\n" + "\n".join(mismatches))
+AssertionError: Sorting mismatches:
+Page 1 Listing 2: missing price.
+Page 1: prices not in descending order: [3695000, 5690000, 4700000, 3350000]
+
+2025-04-28 23:56:05 ERROR    FAIL: tests.filter_test.FilterTests.test_verify_imported_assembly_across_pages
+Traceback (most recent call last):
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\tests\filter_test.py", line 381, in test_verify_imported_assembly_across_pages
+    self.assertFalse(mismatches,
+AssertionError: ["Page 1, Listing 1 (ID: 10026103, URL: https://www.pakwheels.com/used-cars/toyota-corolla-2015-for-sale-in-gujranwala-10026103): Assembly mismatch. Expected 'Imported', got 'Local'.", "Page 1, Listing 2 (ID: 9951729, URL: https://www.pakwheels.com/used-cars/toyota-corolla-2020-for-sale-in-lahore-9951729): Assembly mismatch. Expected 'Imported', got 'Local'."] is not false : Found listings that do not match the 'Imported' assembly filter or had errors:\nPage 1, Listing 1 (ID: 10026103, URL: https://www.pakwheels.com/used-cars/toyota-corolla-2015-for-sale-in-gujranwala-10026103): Assembly mismatch. Expected 'Imported', got 'Local'.\nPage 1, Listing 2 (ID: 9951729, URL: https://www.pakwheels.com/used-cars/toyota-corolla-2020-for-sale-in-lahore-9951729): Assembly mismatch. Expected 'Imported', got 'Local'.
+
+2025-04-28 23:56:40 ERROR    FAIL: tests.filter_test.FilterTests.test_verify_listings_match_filters
+Traceback (most recent call last):
+  File "F:\FAST\Software Testing\Pakwheels-Tests-main\tests\filter_test.py", line 175, in test_verify_listings_match_filters
+    self.fail(
+AssertionError: Found listings that do not match the applied filters:\nListing 2 (ID: 10022336): Price mismatch. Price 18500000 not in range [2500000-10000000].\nListing 10 (ID: 9861325): Price mismatch. Price 990000 not in range [2500000-10000000].\nListing 12 (ID: 9933497): Price mismatch. Price 46000000 not in range [2500000-10000000].\nListing 14 (ID: 10026080): Price mismatch. Price 2355000 not in range [2500000-10000000].\nListing 21 (ID: 10024040): Price mismatch. Price 1875000 not in range [2500000-10000000].\nListing 22 (ID: 10025197): Price mismatch. Price 1425000 not in range [2500000-10000000].
+
